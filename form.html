@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HtmlForm</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .hidden { display: none; }
+    </style>
+</head>
+<link rel="icon" href="https://cdn-icons-png.flaticon.com/512/88/88450.png" type="image/icon type">
+<body class="bg-gray-100 p-6">
+    <div class="max-w-lg mx-auto bg-white p-5 border border-gray-300 rounded-lg shadow-md">
+        <form action="form.php">
+
+            <div class="mb-6 p-4 border border-gray-300 rounded-lg">
+                <h2 class="text-lg font-bold underline text-center">Personal Information</h2>
+                <label for="Image" class="block text-gray-700 text-sm font-bold mb-2 mt-4">Upload your image</label>
+                <input type="file">
+                <label for="fname" class="block text-gray-700 text-sm font-bold mb-2 mt-4">First Name:</label>
+                <input id="fname" class="border border-gray-300 rounded p-2 w-full" type="text" placeholder="Enter your first name">
+
+                <label for="lname" class="block text-gray-700 text-sm font-bold mb-2 mt-4">Last Name:</label>
+                <input id="lname" class="border border-gray-300 rounded p-2 w-full" type="text" placeholder="Enter your last name">
+
+                <label for="email" class="block text-gray-700 text-sm font-bold mb-2 mt-4">Email:</label>
+                <input id="email" class="border border-gray-300 rounded p-2 w-full" type="email" placeholder="Enter your email">
+
+                <label for="dob" class="block text-gray-700 text-sm font-bold mb-2 mt-4">Date of Birth:</label>
+                <input id="dob" class="border border-gray-300 rounded p-2 w-full" type="date">
+
+                <label for="contact" class="block text-gray-700 text-sm font-bold mb-2 mt-4">Contact Number:</label>
+                <input id="contact" class="border border-gray-300 rounded p-2 w-full" type="tel" placeholder="Enter your contact number">
+            </div>
+
+            <div class="mb-6 p-4 border border-gray-300 rounded-lg">
+                <h2 class="text-lg font-bold underline text-center">Address Information</h2>
+
+                <label for="pAddress" class="block text-gray-700 text-sm font-bold mb-2 mt-4">Permanent Address:</label>
+                <input id="pAddress" class="border border-gray-300 rounded p-2 w-full" type="text" placeholder="Tole-ward number-district-province">
+
+                <label for="tAddress" class="block text-gray-700 text-sm font-bold mb-2 mt-4">Temporary Address:</label>
+                <input id="tAddress" class="border border-gray-300 rounded p-2 w-full" type="text" placeholder="Tole-ward number-district-province">
+            </div>
+
+            <div class="p-4 border border-gray-300 rounded-lg">
+                <h2 class="text-lg font-bold underline text-center">Family Information</h2>
+
+                <label for="father" class="block text-gray-700 text-sm font-bold mb-2 mt-4">Father's Name:</label>
+                <input id="father" class="border border-gray-300 rounded p-2 w-full" type="text" placeholder="Enter your father's name">
+
+                <label for="faddress" class="block text-gray-700 text-sm font-bold mb-2 mt-4">Father's Address:</label>
+                <input id="faddress" class="border border-gray-300 rounded p-2 w-full" type="text" placeholder="Enter address">
+                
+                <div class="flex items-center mb-2 mt-4">
+                    <input id="sameAsFather" type="checkbox" class="mr-2">
+                    <label for="sameAsFather" class="text-gray-700 text-sm font-bold">Same as Your Address Address</label>
+                </div>
+                
+                <label for="mother" class="block text-gray-700 text-sm font-bold mb-2 mt-4">Mother's Name:</label>
+                <input id="mother" class="border border-gray-300 rounded p-2 w-full" type="text" placeholder="Enter your mother's name">
+           
+                <label for="maddress" class="block text-gray-700 text-sm font-bold mb-2 mt-4">Mother's Address:</label>
+                <input id="maddress" class="border border-gray-300 rounded p-2 w-full" type="text" placeholder="Enter address">
+                
+                <div class="flex items-center mb-2 mt-4">
+                    <input id="sameAsMother" type="checkbox" class="mr-2">
+                    <label for="sameAsMother" class="text-gray-700 text-sm font-bold">Same as Your Address</label>
+                </div>
+            </div>
+
+            <div class="text-end mt-4">
+                <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
